@@ -1,0 +1,24 @@
+GITHUB REPOSITORY ROOT (only 3 files, no folders needed to upload):
+
+repo-root/
+|-- .github/
+|   `-- workflows/
+|       `-- build-apk.yml     <- create with "Add file > Create new file", type the full path
+|                                .github/workflows/build-apk.yml and paste the file contents
+|-- project.zip               <- upload this file as-is (do NOT extract it)
+`-- FILE_STRUCTURE.txt        <- optional
+
+The workflow unzips project.zip at build time. Inside project.zip:
+
+project.godot
+export_presets.cfg
+icon.svg
+.gitignore
+scenes/main.tscn
+scripts/main.gd
+scripts/autoload/{audio_manager,game_data,save_manager}.gd
+scripts/game/{camera_controller,car_builder,car_physics,customization_manager,economy_manager,
+              game_manager,garage_manager,input_manager,mesh_buf,player_controller,road_generator,
+              time_of_day_manager,traffic_ai,traffic_manager,traffic_vehicle,vehicle_spawner,
+              weather_manager}.gd
+scripts/ui/{hud,ui_manager}.gd
